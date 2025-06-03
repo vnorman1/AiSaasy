@@ -1052,6 +1052,7 @@ Majd töltsd újra az oldalt.`);
         return this.scanWebsite();
     }
     
+    
     processNavigationCommands(response) {
         // Navigációs parancsok keresése és feldolgozása
         let processedResponse = response;
@@ -1224,8 +1225,6 @@ Majd töltsd újra az oldalt.`);
             }, 300);
         }, duration);
     }
-
-    // ...existing code...
 }
 
 // Automatikus inicializálás amikor a DOM betöltődött
