@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "config": {
+    "behavior": {
+      "personality": "Segítőkész asszisztens vagyok, aki ismeri ezt a weboldalt és segítek a felhasználóknak navigálni és információt találni.",
+      "tone": "barátságos és professzionális",
+      "language": "hu"
+    },
+    "features": {
+      "autoScan": true,
+      "deepScan": true,
+      "cacheResults": true,
+      "floatingWidget": true
+    }
+  },
+  "siteMap": {
+    "lastScan": null,
+    "pages": [],
+    "structure": {},
+    "content": {}
+  },
+  "conversations": [],
+  "analytics": {
+    "totalQueries": 0,
+    "popularQuestions": {},
+    "userSatisfaction": []
+  }
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfiTool - Minőségi Szerszámok és Kiegészítők</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><style>/*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+ 
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="container mx-auto px-4 py-3">
+            <!-- Top Bar -->
+            <div class="flex items-center justify-between py-2 border-b border-gray-100">
+                <div class="flex items-center space-x-4">
+                    <a href="tel:+36123456789" class="text-sm text-gray-600 hover:text-gray-900 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        +36 12 345 6789
+                    </a>
+                    <span class="text-gray-300">|</span>
+                    <a href="mailto:info@profitool.hu" class="text-sm text-gray-600 hover:text-gray-900 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        info@profitool.hu
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900">Fiók</a>
+                    <a href="#" class="text-sm text-gray-600 hover:text-gray-900">Kívánságlista</a>
+                    <a href="#" class="flex items-center text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        Kosár (0)
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Main Header -->
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-3">
+                    <svg class="h-9 w-9 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                    </svg>
+                    <h1 class="text-2xl font-bold text-gray-900">ProfiTool</h1>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="w-1/2">
+                    <div class="relative">
+                        <input type="text" class="w-full pl-4 pr-10 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent" placeholder="Keresés termékek között...">
+                        <button class="absolute right-0 top-0 h-full px-3 text-gray-500 hover:text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="bg-gray-50 rounded-lg mt-4">
+                <ul class="flex items-center justify-between px-2">
+                    <li><a href="#" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:text-orange-600">Kéziszerszámok</a></li>
+                    <li><a href="#" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:text-orange-600">Elektromos szerszámok</a></li>
+                    <li><a href="#" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:text-orange-600">Festékek</a></li>
+                    <li><a href="#" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:text-orange-600">Faanyagok</a></li>
+                    <li><a href="#" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:text-orange-600">Csavarok, kötőelemek</a></li>
+                    <li><a href="#" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:text-orange-600">Kerti eszközök</a></li>
+                    <li><a href="#" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:text-orange-600">Akciók</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="mb-16 relative overflow-hidden rounded-2xl">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/40 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1581166397057-235af2b3c6dd?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1600&amp;h=500&amp;q=80" class="w-full h-96 object-cover" alt="Szerszámok">
+            <div class="absolute inset-0 flex items-center z-20 px-10">
+                <div class="max-w-lg">
+                    <h2 class="text-4xl font-bold text-white mb-4">Prémium minőségű szerszámok minden projekthez</h2>
+                    <p class="text-xl text-gray-100 mb-8">Fedezze fel széles választékunkat és találja meg a tökéletes eszközöket az Ön igényeihez.</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-6 rounded-full shadow-lg transition-all">Akciós termékek</button>
+                        <button class="bg-white hover:bg-gray-100 text-gray-900 font-medium py-3 px-6 rounded-full shadow-lg transition-all">Kategóriák</button>
+                    </div>
+                </div>
+            </div>
+        </section>        <!-- Featured Categories -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Népszerű kategóriák</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="#" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 transition-all group-hover:shadow-lg">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Kéziszerszámok" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-medium text-lg text-gray-900">Kéziszerszámok</h3>
+                            <p class="text-sm text-gray-600 mt-1">245 termék</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 transition-all group-hover:shadow-lg">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1550963295-019d8a8a61c5?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Elektromos szerszámok" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-medium text-lg text-gray-900">Elektromos szerszámok</h3>
+                            <p class="text-sm text-gray-600 mt-1">187 termék</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 transition-all group-hover:shadow-lg">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1617474019494-705d6a3967f2?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Festékek" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-medium text-lg text-gray-900">Festékek</h3>
+                            <p class="text-sm text-gray-600 mt-1">124 termék</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 transition-all group-hover:shadow-lg">
+                        <div class="h-44 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1533155929419-0731b28c0b43?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Kerti eszközök" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-medium text-lg text-gray-900">Kerti eszközök</h3>
+                            <p class="text-sm text-gray-600 mt-1">98 termék</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="mb-16">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold text-gray-900">Kiemelt termékek</h2>
+                <a href="#" class="text-orange-600 hover:text-orange-700 font-medium flex items-center">
+                    Összes megtekintése
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 p-4 transition-all hover:shadow-lg">
+                    <div class="relative">
+                        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">-20%</span>
+                        <img src="https://images.unsplash.com/photo-1613274554329-70f997ae9a27?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Akkus fúró" class="w-full h-48 object-contain mb-4">
+                    </div>
+                    <h3 class="font-medium text-gray-900">ProfiTech Akkus Fúró 18V</h3>
+                    <div class="flex items-center mt-1 mb-2">
+                        <div class="flex text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-1">(32)</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <div>
+                            <span class="text-gray-400 line-through text-sm">39.990 Ft</span>
+                            <p class="text-xl font-bold text-gray-900">31.990 Ft</p>
+                        </div>
+                        <button class="bg-orange-600 hover:bg-orange-700 text-white p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 p-4 transition-all hover:shadow-lg">
+                    <div class="relative">
+                        <span class="absolute top-2 left-2 bg-green-500 text-white text-xs font-medium px-2 py-1 rounded">Új</span>
+                        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Szerszámkészlet" class="w-full h-48 object-contain mb-4">
+                    </div>
+                    <h3 class="font-medium text-gray-900">ProfiSet 108 Részes Szerszámkészlet</h3>
+                    <div class="flex items-center mt-1 mb-2">
+                        <div class="flex text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-1">(18)</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <div>
+                            <p class="text-xl font-bold text-gray-900">24.990 Ft</p>
+                        </div>
+                        <button class="bg-orange-600 hover:bg-orange-700 text-white p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 p-4 transition-all hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Vízpumpafogó" class="w-full h-48 object-contain mb-4">
+                    </div>
+                    <h3 class="font-medium text-gray-900">ProfiGrip Állítható Vízpumpafogó 250mm</h3>
+                    <div class="flex items-center mt-1 mb-2">
+                        <div class="flex text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-1">(42)</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <div>
+                            <p class="text-xl font-bold text-gray-900">6.990 Ft</p>
+                        </div>
+                        <button class="bg-orange-600 hover:bg-orange-700 text-white p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 p-4 transition-all hover:shadow-lg">
+                    <div class="relative">
+                        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">-15%</span>
+                        <img src="https://images.unsplash.com/photo-1446076863640-2eafbeda0d1b?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Szerszámos láda" class="w-full h-48 object-contain mb-4">
+                    </div>
+                    <h3 class="font-medium text-gray-900">ProfiBox Összecsukható szerszámos láda</h3>
+                    <div class="flex items-center mt-1 mb-2">
+                        <div class="flex text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                        </div>
+                        <span class="text-gray-500 text-xs ml-1">(23)</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <div>
+                            <span class="text-gray-400 line-through text-sm">8.990 Ft</span>
+                            <p class="text-xl font-bold text-gray-900">7.640 Ft</p>
+                        </div>
+                        <button class="bg-orange-600 hover:bg-orange-700 text-white p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Banner and Chat -->
+        <section class="mb-16 flex flex-col lg:flex-row gap-8 items-stretch">
+            <!-- Support Banner -->
+            <div class="w-full lg:w-2/3 bg-gradient-to-r from-orange-600 to-orange-400 rounded-2xl p-8 text-white flex flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-4">Szakértői segítségre van szüksége?</h2>
+                <p class="text-lg mb-6">Kérdezzen bátran az AI asszisztensünktől vagy keresse szakértő kollégáinkat</p>
+                <div class="flex space-x-4">
+                    <a href="tel:+36123456789" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-orange-600 font-medium py-2 px-6 rounded-full transition-all flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        Hívjon minket
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chat Box (Initially Hidden) -->
+            <div id="chat-container" class="hidden w-full lg:w-1/3 bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="flex flex-col h-[400px]">
+                    <!-- Chat Header -->
+                    <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="h-10 w-10 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <h3 class="text-lg font-medium text-gray-900">ProfiTool Segítő</h3>
+                                    <p class="text-sm text-gray-500">Online</p>
+                                </div>
+                            </div>
+                            <button id="close-chat" class="text-gray-400 hover:text-gray-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Chat Messages -->
+                    <div id="chat-messages" class="flex-1 overflow-y-auto p-6 space-y-4">
+                        <!-- AI Message -->
+                        <div class="flex items-start">
+                            <div class="h-8 w-8 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center text-white flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                                </svg>
+                            </div>
+                            <div class="ml-3 bg-gray-50 rounded-2xl rounded-tl-none px-4 py-3 max-w-[80%]">
+                                <p class="text-gray-800">Üdvözlöm a ProfiTool oldalán! Miben segíthetek Önnek ma?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Chat Input -->
+                    <div class="p-4 border-t border-gray-200 bg-white">
+                        <form id="chat-form" class="flex items-center space-x-2">
+                            <input type="text" id="user-input" class="flex-1 border border-gray-300 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent" placeholder="Írja be kérdését...">
+                            <button type="submit" class="bg-orange-600 text-white p-2 rounded-full hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Highlights -->
+        <section class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                <div class="h-12 w-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Ingyenes szállítás</h3>
+                <p class="text-gray-600">20.000 Ft feletti rendelésnél ingyenesen szállítjuk a terméket országszerte.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                <div class="h-12 w-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">2 év garancia</h3>
+                <p class="text-gray-600">Minden termékünkre legalább 2 év garanciát vállalunk, egyes termékekre akár 5 évet is.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                <div class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Biztonságos fizetés</h3>
+                <p class="text-gray-600">Többféle fizetési mód, bankkártyás, átutalásos és utánvétes lehetőségekkel.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 mt-20">
+        <div class="container mx-auto px-4 py-8">
+            <div class="text-center text-gray-600 text-sm">
+                <p>© 2025 AI Assistant Demo. All rights reserved.</p>
+                <p class="mt-1">An Apple-inspired design for SAAS demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/script.js"></script>
+    
+    <script>
+        document.getElementById('chat-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userInput = document.getElementById('user-input');
+            if (userInput.value.trim() === '') return;
+            
+            // Add user message to chat
+            const chatMessages = document.getElementById('chat-messages');
+            const userMessageHTML = `
+                <div class="flex items-start justify-end">
+                    <div class="mr-3 bg-blue-600 text-white rounded-2xl rounded-tr-none px-4 py-3 max-w-[80%]">
+                        <p>${userInput.value}</p>
+                    </div>
+                    <div class="h-8 w-8 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                </div>
+            `;
+            chatMessages.innerHTML += userMessageHTML;
+            
+            // Clear input
+            userInput.value = '';
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // This is where your SAAS script would be called to get AI response
+            // For demo purposes, adding a placeholder response
+            setTimeout(() => {
+                const aiResponseHTML = `
+                    <div class="flex items-start">
+                        <div class="h-8 w-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div class="ml-3 bg-gray-50 rounded-2xl rounded-tl-none px-4 py-3 max-w-[80%]">
+                            <p class="text-gray-800">I'm processing your request. This is a demo placeholder response. Your actual AI SAAS would provide a real response here.</p>
+                        </div>
+                    </div>
+                `;
+                chatMessages.innerHTML += aiResponseHTML;
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 1000);
+        });
+    </script>
+
+</body></html>
