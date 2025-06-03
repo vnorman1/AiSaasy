@@ -234,10 +234,6 @@ AIAssistant.updateBehavior({
 - **Oktatási oldalak**: Kurzus segítség, anyag magyarázat, fejezetek közötti navigáció
 - **Szolgáltató oldalak**: Szolgáltatás keresés, árak megjelenítése, elérhetőség
 
-## 🔄 Frissítések
-
-A SAAS automatikusan frissíti magát amikor új funkciók érkeznek. A brain.json verziókövetése biztosítja a kompatibilitást.
-
 ## 📞 Támogatás
 
 Ha bármilyen kérdésed van, írj a chat ablakba: 
